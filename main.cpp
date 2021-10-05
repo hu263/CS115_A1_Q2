@@ -153,13 +153,13 @@ Weather meanCalculation(const std::vector<Temperature> &tempVect, const std::vec
     sumRainAvg += rainVect[i].getAvgRainfall();
   }
 
-  sumTempMax = sumTempMax/LEN_OF_DATASET;
-  sumTempMin = sumTempMin/LEN_OF_DATASET;
-  sumTempAvg = sumTempAvg/LEN_OF_DATASET;
+  sumTempMax /= LEN_OF_DATASET;
+  sumTempMin /= LEN_OF_DATASET;
+  sumTempAvg /= LEN_OF_DATASET;
 
-  sumRainMax = sumRainMax/LEN_OF_DATASET;
-  sumRainMin = sumRainMin/LEN_OF_DATASET;
-  sumRainAvg = sumRainAvg/LEN_OF_DATASET;
+  sumRainMax /= LEN_OF_DATASET;
+  sumRainMin /= LEN_OF_DATASET;
+  sumRainAvg /= LEN_OF_DATASET;
 
   Rainfall meanRain(sumRainMax, sumRainMin, sumRainAvg);
   Temperature meanTemp(sumTempMax, sumTempMin, sumTempAvg);
