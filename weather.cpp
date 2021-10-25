@@ -3,6 +3,10 @@
 
 #include <iostream>
 
+Weather::Weather(): rain(), temp()
+{
+}
+
 Weather::Weather(Rainfall& rainfall, Temperature& temperature)
 {
   rain = rainfall;

@@ -16,6 +16,8 @@ private:
   /* You can add more variables as needed */
   /* You can add more functions as needed */
 public:
+  Weather(); /*Default Constructor*/
+
   Weather(Rainfall&, Temperature&); /* Constructor */
   Weather(const Weather&); /* Copy Constructor */
   ~Weather(); /* Destructor */
